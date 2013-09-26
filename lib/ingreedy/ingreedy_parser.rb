@@ -67,6 +67,9 @@ class IngreedyParser
     # odds and ends
     set_unit_variations :can, ["can","cans"]
     set_unit_variations :clove, ["clove","cloves"]
+    set_unit_variations :small, ["small","sm"]
+    set_unit_variations :medium, ["medium","med"]
+    set_unit_variations :large, ["large","lg"]
   end
   def parse_unit
     create_unit_map if @unit_map.nil?
