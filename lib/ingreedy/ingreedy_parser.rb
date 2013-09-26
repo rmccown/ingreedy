@@ -64,6 +64,9 @@ class IngreedyParser
     set_unit_variations :liter, ["l", "l.", "liter", "liters"]
     set_unit_variations :milligram, ["mg", "mg.", "milligram", "milligrams"]
     set_unit_variations :milliliter, ["ml", "ml.", "milliliter", "milliliters"]
+    # odds and ends
+    set_unit_variations :can, ["can","cans"]
+    set_unit_variations :clove, ["clove","cloves"]
   end
   def parse_unit
     create_unit_map if @unit_map.nil?
