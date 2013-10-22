@@ -70,6 +70,11 @@ class IngreedyParser
     set_unit_variations :small, ["small","sm"]
     set_unit_variations :medium, ["medium","med"]
     set_unit_variations :large, ["large","lg"]
+    # non-standard units
+    set_unit_variations :pinch, ["pinch", "pinches"]
+    set_unit_variations :dash, ["dash", "dashes"]
+    set_unit_variations :touch, ["touch", "touches"]
+    set_unit_variations :handful, ["handful", "handfuls"] 
   end
   def parse_unit
     create_unit_map if @unit_map.nil?
